@@ -21,8 +21,8 @@ local args = {
 }
 
 function call()
-    local status, out, err = shell.execute("env", args)
-    ngx.say(out)
+    local status, out, err = shell.execute("tree /", args)
+    ngx.say("<pre>"..out.."</pre>")
 end
 
 function loop()
