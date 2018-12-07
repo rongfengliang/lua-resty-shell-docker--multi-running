@@ -21,7 +21,7 @@ local args = {
 }
 
 function call()
-    local status, out, err = shell.execute("cat /proc/sys/kernel/random/uuid", args)
+    local status, out, err = shell.execute("hostname", args)
     ngx.say(out)
 end
 
