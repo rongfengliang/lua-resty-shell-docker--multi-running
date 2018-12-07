@@ -15,4 +15,10 @@ services:
    build: ./
    volumes:
    - "./nginx-back.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+  backend3:
+   build: 
+     context: .
+     dockerfile: Dockerfile-back
+   volumes:
+   - "./nginx-back.conf:/usr/local/openresty/nginx/conf/nginx.conf"
 
