@@ -21,8 +21,8 @@ local args = {
 }
 
 function call()
-    local status, out, err = shell.execute("cd  /opt/demo && yarn init -y && yarn  add uuid", args)
-    ngx.say(out)
+    local status, out, err = shell.execute("mkdir -p /opt/demo && npm install -g yarn && cd  /opt/demo && yarn init -y && yarn  add uuid && tree", args)
+    ngx.say("<pre>"..out.."</pre>")
 end
 
 function loop()

@@ -1,6 +1,6 @@
 FROM openresty/openresty:alpine-fat
 LABEL author="1141591465@qq.com"
-RUN apk add nodejs npm
+RUN apk add nodejs npm tree
 WORKDIR /sockproc
 COPY ./sockproc/ /sockproc/
 RUN make sockproc
