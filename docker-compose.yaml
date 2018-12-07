@@ -9,8 +9,5 @@ services:
    - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
   backend:
    build: ./
-   ports:
-   - "13000:13000"
-   - "8090:80"
    volumes:
    - "./nginx-back.conf:/usr/local/openresty/nginx/conf/nginx.conf"
