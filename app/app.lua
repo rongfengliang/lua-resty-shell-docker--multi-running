@@ -15,13 +15,13 @@ end
 
 local args = {
    socket = {
-       host="backend",
-       port=13000
+       host="127.0.0.1",
+       port=13001
    }
 }
 
 function call()
-    local status, out, err = shell.execute("hostname", args)
+    local status, out, err = shell.execute("env", args)
     ngx.say(out)
 end
 

@@ -7,7 +7,12 @@ services:
    volumes:
    - "./app/:/opt/app/"
    - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
-  backend:
+  backend1:
    build: ./
    volumes:
    - "./nginx-back.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+  backend2:
+   build: ./
+   volumes:
+   - "./nginx-back.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+
