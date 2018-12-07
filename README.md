@@ -43,7 +43,7 @@ openresty-shell-multi_backend_3   /entrypoint.sh   Up
 * nodejs app build demo
 
 ```code
-open http://localhost:8080/nodee
+open http://localhost:8080/node
 ```
 result like below
 
